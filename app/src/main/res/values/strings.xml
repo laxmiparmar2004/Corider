@@ -6,4 +6,10 @@
     <string name="your_rides_title">Your rides</string>
     <string name="inbox_title">Inbox</string>
     <string name="profile_title">Profile</string>
+    <string name="inbox">inbox</string>
+    <string name="publish">publish</string>
+    <string name="notification">Notification</string>
+    <string name="button">Button</string>
+    <string name="osmdroid_base_path">/sdcard/osmdroid/</string>
+
 </resources>
