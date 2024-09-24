@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment.SearchFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="search" />
 
-</FrameLayout>
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="278dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="246dp"
+        android:drawableStart="@android:drawable/ic_menu_mylocation"
+        android:hint="Leaving from"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="34dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView2"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="179dp"
+        android:drawableStart="@android:drawable/ic_menu_mylocation"
+        android:hint="Going to"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="34dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="176dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="116dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Select Date"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/autoCompleteTextView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/autoCompleteTextView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

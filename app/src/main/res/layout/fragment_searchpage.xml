@@ -7,84 +7,9 @@
     tools:context=".ui.fragment.SearchFragment">
 
     <!-- Background Image -->
-    <ImageView
-        android:id="@+id/backgroundImageView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="0dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/design"
-        app:layout_constraintBottom_toTopOf="@+id/searchContainer"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Container for search components -->
-    <LinearLayout
-        android:id="@+id/searchContainer"
-        android:layout_width="385dp"
-        android:layout_height="544dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <!-- Title TextView -->
-        <TextView
-            android:id="@+id/titleTextView"
-            android:layout_width="328dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
-            android:text='"Your Next Adventure Begins Here – Search for Rides!"'
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_green_light"
-            android:textSize="18sp"
-            android:textStyle="bold" />
 
-        <!-- EditText for Leaving From -->
-        <EditText
-            android:id="@+id/leavingFromEditText"
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:hint="Leaving From"
-            android:inputType="text" />
-
-        <!-- EditText for Going To -->
-        <EditText
-            android:id="@+id/goingToEditText"
-            android:layout_width="397dp"
-            android:layout_height="74dp"
-            android:hint="Going To"
-            android:inputType="text" />
-
-        <!-- EditText for Date -->
-        <EditText
-            android:id="@+id/dateEditText"
-            android:layout_width="397dp"
-            android:layout_height="78dp"
-            android:hint="Today"
-            android:inputType="date" />
-
-        <!-- EditText for Number of Users -->
-        <EditText
-            android:id="@+id/numberOfUsersEditText"
-            android:layout_width="match_parent"
-            android:layout_height="86dp"
-            android:hint="Number of Users"
-            android:inputType="number" />
-
-        <!-- Search Button -->
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/searchButton"
-            android:layout_width="235dp"
-            android:layout_height="85dp"
-            android:background="@drawable/newgreenbuttongradient"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:text="Search" />
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
